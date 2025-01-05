@@ -141,7 +141,7 @@ function App() {
   const likeMember = (id) => {
     console.log('liked', id);
     const remainingMembers = members.map((member) => {
-      if (member.id == id) {
+      if (member.id === id) {
         member.fav = !member.fav;
       }
       return member;
